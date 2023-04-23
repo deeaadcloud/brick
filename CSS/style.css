@@ -774,7 +774,7 @@ section {
   height: 100%; }
 
 .main {
-  background-image: url(./../Imgs/bannerBg.png);
+  background-image: url(./../Imgs/mainBack.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
