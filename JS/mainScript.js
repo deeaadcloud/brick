@@ -1,24 +1,49 @@
 //preloader
 
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
 
-  const mediaFiles = document.querySelectorAll('img, video');
-  let i = 0
- console.log(mediaFiles)
-  Array.from(mediaFiles).forEach((file, i) => {
-      file.onload = () => {
-          i++
+//   const mediaFiles = document.querySelectorAll('img, video');
+//   let i = 0
+//  console.log(mediaFiles)
+//   Array.from(mediaFiles).forEach((file, i) => {
+//       file.onload = () => {
+//           i++
 
-          percents.innerHTML = ((i * 100) / mediaFiles.length).toFixed(1)
+//           percents.innerHTML = ((i * 100) / mediaFiles.length).toFixed(1)
 
-          if(i === mediaFiles.length) {
-              preloader.classList.add('preloader--hide')
-              percents.innerHTML = 100
-          }
-      }
-  })
+//           if(i === mediaFiles.length) {
+//               preloader.classList.add('preloader--hide')
+//               percents.innerHTML = 100
+//           }
+//       }
+//   })
 
-})
+// })
+
+// function myFunction() {
+//   const body = document.body;
+//   body.style.position = 'fixed';
+//   document.getElementById("myDropdown").classList.toggle("show");
+// }
+
+// window.addEventListener('scroll', () => {
+//   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+// });
+// window.onclick = function (event) {
+//   if (!event.target.matches('.dropbtn')) {
+//       const body = document.body;
+//       body.style.position = '';
+//       body.style.top = '';
+//       var dropdowns = document.getElementsByClassName("dropdown-content");
+//       var i;
+//       for (i = 0; i < dropdowns.length; i++) {
+//           var openDropdown = dropdowns[i];
+//           if (openDropdown.classList.contains('show')) {
+//               openDropdown.classList.remove('show');
+//           }
+//       }
+//   }
+// }
 
 // popup
 let popupBg = document.querySelector(".popup__bg"); // Фон попап окна

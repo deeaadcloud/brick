@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <div class="preloader" id="preloader">
+    <!-- <div class="preloader" id="preloader">
       <div class="preloader_loader">
         <div class="loadingio-spinner-gear-05fugsawxzuh"><div class="ldio-5no0p6xu2ay">
           <div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -27,7 +27,7 @@
           <span id="percents">0</span>%
         </span>
       </div>
-    </div>
+    </div> -->
     <header class="Header fixed-top ">
       <div class="container">
         <div class="header_inner">
@@ -36,13 +36,17 @@
             <p class="header_logo-text">Мастер-сервис</p>
             <p class="header_logo-text">Сервисный-Центр</p>
           </div>
-          <ul class="header_logo_menu-list">
-            <li class="header_logo-list-item">
+
+          <div class="dropdown">
+            <button class="dropbtn">Каталог</button>
+            <div class="dropdown-content">
               <a class="list-item-link" href="./priceFBS.html">Блоки</a>
-            </li>
-            <li class="header_logo-list-item">
               <a class="list-item-link" href="./pricePK.html">Плиты</a>
-            </li>
+            </div>
+          </div>
+          
+          <ul class="header_logo_menu-list">
+              
             <li class="header_logo-list-item">
               <a class="list-item-link" href="#">О нас</a>
             </li>
@@ -147,34 +151,9 @@
       <div class="container">
         <div class="main_inner">
           <div class="main_info">
-            <h6 class="main_info-h6">
-              Ремонт техники “Название бренда” в день обращения
-            </h6>
-            <h1 class="main_info-h1">Ваше готовое устройство</h1>
-            <div class="main_info-text">
-              <p class="main_info-text-p">Через 1,5 часа</p>
-              <p class="main_info-text-p">
-                Благодаря собственному складу оригинальных запчастей
-              </p>
-            </div>
-            <div class="main_info_form">
-              <div class="main_info_form-tel-body">
-                <input
-                  type="text"
-                  class="main_info_form-tel"
-                  placeholder="Введите номер телефона"
-                />
-              </div>
-              <button class="main_info_form-but">Узнать цену ремонта</button>
-            </div>
-          </div>
-          <div class="main_img">
-            <img src="./Imgs/mainBanner.png" alt="" />
-            <div class="main_img_banner">
-              <h3>-20%</h3>
-              <p>Скидки при записи</p>
-            </div>
-          </div>
+            
+            
+          
           <div class="main_cards">
             <div class="main_cards-item">
               <h5>Бесплатная диагностика</h5>
@@ -196,8 +175,8 @@
       <div class="container">
         <div class="device_inner">
           <div class="device_info">
-            <h2 class="device_info-h2">Ваше <span>готовое</span> устройство</h2>
-            <h4 class="device_info-h4">Не нашли нужное устройство ?</h4>
+            <h2 class="device_info-h2">Каталог</h2>
+            <h4 class="device_info-h4">Не нашли нужное товар</h4>
             <p class="device_info-p">
               Или оставть заявку и наш менеджер Вам перезвонит через 15 минут.
             </p>
@@ -218,98 +197,109 @@
                   >+7 (812) 506-18-20</a
                 >
               </h5>
-              <img
-                class="device_info_form-img"
-                src="./Imgs/Arrow 6.png"
-                alt="arrow"
-              />
             </div>
           </div>
           <div class="device_cards">
             <div class="device_cards_item">
               <img
                 class="device_cards_item-img"
-                src="./Imgs/priceCard/Card1.svg"
+                src="./Imgs/priceCard/Card1"
                 alt=""
               />
               <div class="device_cards_item-text">
-                <h4 class="device_cards_item-text-h4">Смартфоны</h4>
+                <h4 class="device_cards_item-text-h4">Плиты перекрытия ПК</h4>
+              </div>
+              <button class="device_cards_item-but open-popup"><a href="./pricePK.html">Перейти</a></button>
+            </div>
 
-                <p class="device_cards_item-text-p">16 услуг</p>
-                <p class="device_cards_item-text-p">Цена от: 500 руб.</p>
+            <div class="device_cards_item">
+              <img
+                class="device_cards_item-img"
+                src="./Imgs/priceCard/Card2.jpeg"
+                alt=""
+              />
+              <div class="device_cards_item-text">
+                <h4 class="device_cards_item-text-h4">Блоки ФБС</h4>
+              </div>
+              <button class="device_cards_item-but open-popup"><a href="./priceFBS.html">Перейти</a></button>
+            </div>
+            <div class="device_cards_item">
+              <img
+                class="device_cards_item-img"
+                src="./Imgs/priceCard/Card3.jpg"
+                alt=""
+              />
+              <div class="device_cards_item-text">
+                <h4 class="device_cards_item-text-h4">Сваи</h4>
+                <p style="text-align: center;"><span style="font-weight: 700;">Примечание</span>: по согласованию возможно изготовление
+                  иных свай сечением 30см, 35см, 40см (длина до 24 м) по договорной цене</p>
+                <p ><img style="max-width: 20px; margin-right:5px;" src="./Imgs/Services/product.png" alt="">Информация по запросу</p>
               </div>
               <button class="device_cards_item-but open-popup">Перейти</button>
             </div>
             <div class="device_cards_item">
               <img
                 class="device_cards_item-img"
-                src="./Imgs/priceCard/Card2.svg"
+                src="./Imgs/priceCard/Card6.jpg"
                 alt=""
               />
               <div class="device_cards_item-text">
-                <h4 class="device_cards_item-text-h4">Планшеты</h4>
-
-                <p class="device_cards_item-text-p">16 услуг</p>
-                <p class="device_cards_item-text-p">Цена от: 500 руб.</p>
+                <h4 class="device_cards_item-text-h4">Перемычки</h4>
+                <p >В ассортименте под заказ</p>
+                <p ><img style="max-width: 20px; margin-right:5px;" src="./Imgs/Services/product.png" alt="">Информация по запросу</p>
               </div>
               <button class="device_cards_item-but open-popup">Перейти</button>
             </div>
             <div class="device_cards_item">
               <img
                 class="device_cards_item-img"
-                src="./Imgs/priceCard/Card3.svg"
+                src="./Imgs/priceCard/Card4.webp"
                 alt=""
               />
               <div class="device_cards_item-text">
-                <h4 class="device_cards_item-text-h4">Фотоаппараты</h4>
-
-                <p class="device_cards_item-text-p">16 услуг</p>
-                <p class="device_cards_item-text-p">Цена от: 500 руб.</p>
+                <h4 class="device_cards_item-text-h4">Вен блоки</h4>
+                <p >В ассортименте под заказ</p>
+                <p ><img style="max-width: 20px; margin-right:5px;" src="./Imgs/Services/product.png" alt="">Информация по запросу</p>
               </div>
               <button class="device_cards_item-but open-popup">Перейти</button>
             </div>
             <div class="device_cards_item">
               <img
                 class="device_cards_item-img"
-                src="./Imgs/priceCard/Card4.svg"
+                src="./Imgs/priceCard/Card5.jpg"
                 alt=""
               />
               <div class="device_cards_item-text">
-                <h4 class="device_cards_item-text-h4">Телевизоры</h4>
-
-                <p class="device_cards_item-text-p">16 услуг</p>
-                <p class="device_cards_item-text-p">Цена от: 500 руб.</p>
+                <h4 class="device_cards_item-text-h4">ПДН</h4>
+                <p ><img style="max-width: 20px; margin-right:5px;" src="./Imgs/Services/product.png" alt="">Информация по запросу</p>
               </div>
               <button class="device_cards_item-but open-popup">Перейти</button>
             </div>
             <div class="device_cards_item">
               <img
                 class="device_cards_item-img"
-                src="./Imgs/priceCard/Card5.svg"
+                src="./Imgs/priceCard/Card7.webp"
                 alt=""
               />
               <div class="device_cards_item-text">
-                <h4 class="device_cards_item-text-h4">Проекторы</h4>
-
-                <p class="device_cards_item-text-p">16 услуг</p>
-                <p class="device_cards_item-text-p">Цена от: 500 руб.</p>
+                <h4 class="device_cards_item-text-h4">Лестничные марши</h4>
+                <p ><img style="max-width: 20px; margin-right:5px;" src="./Imgs/Services/product.png" alt=""> Информация по запросу</p>
               </div>
               <button class="device_cards_item-but open-popup">Перейти</button>
             </div>
             <div class="device_cards_item">
               <img
                 class="device_cards_item-img"
-                src="./Imgs/priceCard/Card6.svg"
+                src="./Imgs/priceCard/Card8.png"
                 alt=""
               />
               <div class="device_cards_item-text">
-                <h4 class="device_cards_item-text-h4">Видеокамеры</h4>
-
-                <p class="device_cards_item-text-p">16 услуг</p>
-                <p class="device_cards_item-text-p">Цена от: 500 руб.</p>
+                <h4 class="device_cards_item-text-h4">Газоблоки</h4>
+                <p style="text-align: center;"><img style="max-width: 20px; margin-right:5px;" src="./Imgs/Services/product.png" alt=""> Информация по запросу</p>
               </div>
               <button class="device_cards_item-but open-popup">Перейти</button>
             </div>
+            
           </div>
         </div>
       </div>
