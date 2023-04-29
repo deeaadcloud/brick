@@ -509,7 +509,7 @@ table tbody tr td:last-child {
         z-index: 10;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         .header_logo {
             display: flex;
             flex-direction: column;
@@ -1112,6 +1112,7 @@ section {
             flex: 0 0 100%;
             gap: 30px;
             display: flex;
+            justify-content: center;
             .main_cards-item {
                 box-shadow: 0px 30px 50px 0px #7e8fa033;
                 height: 200px;
@@ -1532,37 +1533,52 @@ section {
 //device
 .device {
     background-color: #f8fbfe;
-    padding: 216px 0;
+    padding: 130px 0 0 0;
     height: fit-content;
+    .device_info-h2 {
+        font-weight: 600;
+        position: relative;
+        span {
+            font-size: 40px;
+            font-weight: 600;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &::after {
+            left: 0;
+            bottom: 0%;
+            content: "";
+            position: absolute;
+            height: 1px;
+            max-width: 440px;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            background: #2b324733;
+        }
+    }
     .device_inner {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .device_info-h5 {
+            margin-bottom: 24px;
+            margin-top: 10px;
+            a.device_info-h5-link {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                cursor: pointer;
+
+                background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
         .device_info {
             flex: 0 0 50%;
-            .device_info-h2 {
-                font-weight: 600;
-                margin-bottom: 81px;
-                position: relative;
-                span {
-                    font-size: 60px;
-                    font-weight: 600;
-                    line-height: 70px;
-                    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-                &::after {
-                    left: 0;
-                    bottom: -7%;
-                    content: "";
-                    position: absolute;
-                    height: 1px;
-                    max-width: 440px;
-                    width: 100%;
-                    border: none;
-                    border-radius: 6px;
-                    background: #2b324733;
-                }
-            }
+            
             .device_info-h4 {
                 margin-bottom: 10px;
             }
@@ -1572,22 +1588,16 @@ section {
             .device_info-tel-p {
                 margin-top: 30px;
             }
-            .device_info-h5 {
-                margin-bottom: 24px;
-                margin-top: 10px;
-                a.device_info-h5-link {
-                    font-size: 24px;
-                    font-weight: 700;
-                    line-height: 28px;
-                    cursor: pointer;
+            
 
-                    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
             img.device_info_form-img {
                 margin: 0 26%;
+            }
+        }
+        .device_info_form 
+        { margin-bottom: 6rem;
+            .device_info_form-text{
+                transform: translate(0, -30%);
             }
         }
         .device_cards {
@@ -2317,6 +2327,25 @@ section {
 
 //preloader
 
-
+footer{
+}
+.container {
+}
+.footer_inner {
+    padding: 15px 0 ;
+    
+}
+.d-flex {
+}
+.footer_info {
+}
+.row {
+}
+.header_logo_whats {
+}
+.footer_tel {
+    margin: auto 0;
+    margin-left: auto;
+}
 
 /*---------------------------------Main------------------------------------*/
