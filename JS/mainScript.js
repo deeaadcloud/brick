@@ -46,67 +46,67 @@
 // }
 
 // popup
-let popupBg = document.querySelector(".popup__bg"); // Фон попап окна
-let popup = document.querySelector(".popup"); // Само окно
-let popupSuc = document.querySelector(".popup_suc"); // Окно успешно!
-let openPopupButtons = document.querySelectorAll(".open-popup"); // Кнопки для показа окна
-let openSucButtons = document.querySelector(".send"); // Кнопки для показа окна
-let closePopupButton = document.querySelector(".close-popup");
-let closeSucButton = document.querySelector(".close-popup2");
-let closeSucButton2 = document.getElementById("close");
+// let popupBg = document.querySelector(".popup__bg"); // Фон попап окна
+// let popup = document.querySelector(".popup"); // Само окно
+// let popupSuc = document.querySelector(".popup_suc"); // Окно успешно!
+// let openPopupButtons = document.querySelectorAll(".open-popup"); // Кнопки для показа окна
+// let openSucButtons = document.querySelector(".send"); // Кнопки для показа окна
+// let closePopupButton = document.querySelector(".close-popup");
+// let closeSucButton = document.querySelector(".close-popup2");
+// let closeSucButton2 = document.getElementById("close");
 
-openPopupButtons.forEach((button) => {
-  // Перебираем все кнопки
-  button.addEventListener("click", (e) => {
-    // Для каждой вешаем обработчик событий на клик
-    e.preventDefault(); // Предотвращаем дефолтное поведение браузера
-    popupBg.classList.add("active"); // Добавляем класс 'active' для фона
-    popup.classList.add("active"); // И для самого окна
-    const body = document.body;
-    body.style.overflowY = "hidden";
-  });
-});
+// openPopupButtons.forEach((button) => {
+//   // Перебираем все кнопки
+//   button.addEventListener("click", (e) => {
+//     // Для каждой вешаем обработчик событий на клик
+//     e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+//     popupBg.classList.add("active"); // Добавляем класс 'active' для фона
+//     popup.classList.add("active"); // И для самого окна
+//     const body = document.body;
+//     body.style.overflowY = "hidden";
+//   });
+// });
 
-closePopupButton.addEventListener("click", () => {
-  // Вешаем обработчик на крестик
-  popupBg.classList.remove("active"); // Убираем активный класс с фона
-  popup.classList.remove("active"); // И с окна
-  popupSuc.classList.remove("active");
-  const body = document.body;
-  body.style.height = "";
-  body.style.overflowY = "";
-});
+// closePopupButton.addEventListener("click", () => {
+//   // Вешаем обработчик на крестик
+//   popupBg.classList.remove("active"); // Убираем активный класс с фона
+//   popup.classList.remove("active"); // И с окна
+//   popupSuc.classList.remove("active");
+//   const body = document.body;
+//   body.style.height = "";
+//   body.style.overflowY = "";
+// });
 
-closeSucButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  popupBg.classList.remove("active"); // Убираем активный класс с фона
-  popup.classList.remove("active");
-  popupSuc.classList.remove("active");
-  const body = document.body;
-  body.style.height = "";
-  body.style.overflowY = "";
-});
-closeSucButton2.addEventListener("click", () => {
-  // Вешаем обработчик на крестик
-  popupBg.classList.remove("active"); // Убираем активный класс с фона
-  popupSuc.classList.remove("active");
-  const body = document.body;
-  body.style.height = "";
-  body.style.overflowY = "";
-});
+// closeSucButton.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   popupBg.classList.remove("active"); // Убираем активный класс с фона
+//   popup.classList.remove("active");
+//   popupSuc.classList.remove("active");
+//   const body = document.body;
+//   body.style.height = "";
+//   body.style.overflowY = "";
+// });
+// closeSucButton2.addEventListener("click", () => {
+//   // Вешаем обработчик на крестик
+//   popupBg.classList.remove("active"); // Убираем активный класс с фона
+//   popupSuc.classList.remove("active");
+//   const body = document.body;
+//   body.style.height = "";
+//   body.style.overflowY = "";
+// });
 
-document.addEventListener("click", (e) => {
-  // Вешаем обработчик на весь документ
-  if (e.target === popupBg) {
-    // Если цель клика - фон, то:
-    popupBg.classList.remove("active"); // Убираем активный класс с фона
-    popup.classList.remove("active"); // И с окна
-    popupSuc.classList.remove("active");
-    const body = document.body;
-    body.style.height = "";
-    body.style.overflowY = "";
-  }
-});
+// document.addEventListener("click", (e) => {
+//   // Вешаем обработчик на весь документ
+//   if (e.target === popupBg) {
+//     // Если цель клика - фон, то:
+//     popupBg.classList.remove("active"); // Убираем активный класс с фона
+//     popup.classList.remove("active"); // И с окна
+//     popupSuc.classList.remove("active");
+//     const body = document.body;
+//     body.style.height = "";
+//     body.style.overflowY = "";
+//   }
+// });
 // popup
 
 //tel input
@@ -170,15 +170,15 @@ window.addEventListener("DOMContentLoaded", function () {
 
 //disable overflow when menu opened
 
-const burger = document.getElementById("burger-toggle");
-const mobileMenu = document.querySelector(".menu");
+// const burger = document.getElementById("burger-toggle");
+// const mobileMenu = document.querySelector(".menu");
 
 
 
-burger.addEventListener("click", () => {
-  const body = document.body;
-  body.classList.toggle ("is-menu-open");
-});
+// burger.addEventListener("click", () => {
+//   const body = document.body;
+//   body.classList.toggle ("is-menu-open");
+// });
 
 
 
